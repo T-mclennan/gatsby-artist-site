@@ -1,18 +1,23 @@
 const data = [
   {
     id: 1,
-    text: "home",
-    url: "/",
+    text: "about",
+    url: "/about",
   },
   {
     id: 2,
-    text: "about",
-    url: "/about/",
+    text: "murals",
+    url: "/murals/",
   },
   {
     id: 3,
-    text: "projects",
-    url: "/projects/",
+    text: "prints",
+    url: "/prints/",
+  },
+  {
+    id: 4,
+    text: "music",
+    url: "/music/",
   },
   {
     id: 5,
