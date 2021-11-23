@@ -1,7 +1,8 @@
 .hero {
-  height: 100vh;
+  height: 70vh;
   background: var(--clr-primary-10);
   position: relative;
+  overflow: hidden;
 }
 
 .heroDetails {
@@ -17,26 +18,14 @@
   z-index: 5;
 }
 
-/* If size is not mobile */
-.hero::after {
-  content: "This is some content";
-  position: relative;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  height: 20rem;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: darkslategrey;
-}
-
 .heroText {
   max-width: 30rem;
   text-align: center;
   color: white;
+}
+
+.heroImage {
+  position: 'absolute', 
 }
 
 .detailBox {

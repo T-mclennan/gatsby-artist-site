@@ -6,20 +6,21 @@ import { StaticImage } from "gatsby-plugin-image";
 import HeroNav from './HeroNav';
 import * as styles from './Hero.module.css';
 
+
 const Hero = () => {
   return (
     <header className={styles.hero}>
-        {/* <HeroNav />
+        <HeroNav />
         <div className={styles.heroDetails}>
           <div className={styles.heroText}>
-            <h1>Santa Cruz Street Art</h1>
-            <button>Learn More</button>
+            <h1 className={styles.heroText}>Santa Cruz Street Art</h1>
+            <Link to="/about" className="btn center-btn">
+              See Gallery
+            </Link>
           </div>
-        </div> */}
-          {/* <div className={styles.detailBox}>
-            <h1>Some other content</h1>
-          </div> */}
-        {/* <Parallax className="custom-class" y={[-70, 70]} tagOuter="figure"> */}
+        </div>
+
+        <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
           <StaticImage 
             // height={1000}
             src="../../assets/images/hallway.jpg"
@@ -27,7 +28,7 @@ const Hero = () => {
             className="hero-img"
             placeholder="blurred"
           />
-        {/* </Parallax> */}
+        </Parallax>
 
     </header>
   )
