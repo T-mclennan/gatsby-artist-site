@@ -1,26 +1,35 @@
 import React from 'react';
-import {Button} from 'antd';
+import Title from '../Title';
+import { Link } from "gatsby";
+import services from '../../constants/services';
+import * as styles from './Tagline.module.css';
 
-const TaglineStyle = {
-  width: '100%', 
-  height: '30vh',
-  backgroundColor: 'white',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  padding: '1rem 1rem',
-  maxWidth: '50rem'
-}
+
 
 function Tagline() {
   return (
-    <div style={TaglineStyle}>
-      {/* <h1>Professional Street Art and Murals</h1>
-      <p>Based in Santa Cruz California, we're an artist group with a variety of styles and mediums.  
-        Let us help with your next dream project. Feel free to contact us for more details. 
-      </p>
-      <Button>Contact Us</Button> */}
-    </div>
+    <section className={styles.tagContainer}>
+      <Title title="Professional Street Art"/>
+      <div className={`${styles.servicesCenter} section-center`}>
+        {services.map((service) => {
+          const {id, icon, title, text} = service;
+          return <article key={id} className={styles.service}>
+            {icon}
+            <h4>{title}</h4>
+            <div className="underline" />
+            <p className="text">{text}</p>
+          </article>;
+        })}
+      </div>
+      {/* <div className={styles.contentBlock}>
+        <p>Based in Santa Cruz California, we're an artist group with a variety of styles and mediums.  
+          Let us help with your next dream project. Feel free to contact us for more details. 
+        </p>
+      </div>
+      <Link to="/about" className="btn center-btn">
+        Learn More
+      </Link> */}
+    </section>
   )
 }
 

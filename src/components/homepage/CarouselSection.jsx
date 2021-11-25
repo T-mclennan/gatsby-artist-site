@@ -45,7 +45,7 @@ function CarouselSection() {
   return (
 
 
-    <section id="carousel-content">
+    <section id="carousel-content" style={{backgroundColor: 'white'}}>
       <Carousel arrows autoplay effect="fade">
         <>
           <div style={contentStyle}>
