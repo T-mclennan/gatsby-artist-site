@@ -5,7 +5,7 @@ import pageLinks from "../../constants/links";
 import { Link } from "gatsby";
 import * as styles from './Navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
 
   const [navType, setNavType] = useState('navbar');
 
@@ -14,6 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (window.location.pathname === '/') {
+      console.log(`pathname: ${window.location.pathname}`)
       setNavType('invisible')
       console.log('turning invisible')
     }
@@ -41,7 +42,7 @@ const Navbar = () => {
           <Link to={"/"} style={{marginTop: 5}}>
             <img src={logo} alt="graff and stuff" />
           </Link>
-          <button type="button" className={styles.toggleBtn} aria-label="menu">
+          <button type="button" className={styles.toggleBtn} aria-label="menu" onClick={toggleSidebar}>
             <FaAlignRight />
           </button>
         </div>

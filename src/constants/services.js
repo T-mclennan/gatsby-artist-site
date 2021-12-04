@@ -1,27 +1,29 @@
 import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaCode, FaSketch, FaAndroid, FaBrush } from "react-icons/fa"
+import { IoBrushOutline, IoColorPaletteOutline } from "react-icons/io5"
+
 
 const serviceIcon = {
-  fontSize: '2rem',
+  fontSize: '3rem',
   marginBottom: '1.5rem',
 }
 const services = [
   {
     id: 1,
-    icon: <FaCode style={serviceIcon} />,
-    title: "web development",
+    icon: <IoBrushOutline style={serviceIcon} />,
+    title: "mural painting",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
   {
     id: 2,
-    icon: <FaSketch style={serviceIcon} />,
-    title: "web design",
+    icon: <IoColorPaletteOutline style={serviceIcon} />,
+    title: "other mediums",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
   {
     id: 3,
-    icon: <FaAndroid style={serviceIcon} />,
-    title: "app design",
+    icon: <FaBrush style={serviceIcon} />,
+    title: "consulting services",
     text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
   },
 ]

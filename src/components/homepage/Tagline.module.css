@@ -37,7 +37,7 @@
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-4);
   color: var(--clr-primary-9);
 }
 .service:hover p {

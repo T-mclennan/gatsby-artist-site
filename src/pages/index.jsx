@@ -12,10 +12,12 @@ const IndexPage = () => {
     <>
       <main>
         <Hero />
-        <Tagline />
-        <CarouselSection />
-        <Testimonial />
-        <CallToAction />
+        <div style={{background: "white", zIndex: 1}} >
+          <Tagline />
+          <CarouselSection />
+          <Testimonial />
+          <CallToAction />
+        </div>
       </main>
     </>
   )
