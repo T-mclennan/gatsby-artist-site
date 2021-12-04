@@ -3,35 +3,35 @@ import logo from "../../assets/images/Stuff.svg";
 import { FaAlignRight } from "react-icons/fa";
 import pageLinks from "../../constants/links";
 import { Link } from "gatsby";
-import * as styles from './Navbar.module.css'
+import HamburgerButton from './HamburgerButton';
+import * as styles from './Navbar.module.css';
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = ({ isOpen, toggleSidebar }) => {
 
-  const [navType, setNavType] = useState('navbar');
+  const [navType, setNavType] = useState('invisible');
 
   const navRef = React.useRef();
   navRef.current = navType;
 
+  const dependencies = typeof window !== "undefined" ? [window.location.pathname] : []
+
   useEffect(() => {
+    setNavType()
     if (window.location.pathname === '/') {
-      console.log(`pathname: ${window.location.pathname}`)
       setNavType('invisible')
-      console.log('turning invisible')
+    } else {
+      setNavType('navbar')
     }
 
     const handleScroll = () => {
       const show = window.scrollY > 650
-      if (show) {
-        setNavType('navbar')
-      } else {
-        setNavType('invisible')
-      }
+      setNavType(show ? 'navbar' : 'invisible')
     }
     document.addEventListener('scroll', handleScroll);
     return () => {
         document.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, dependencies)
 
 
 
@@ -42,9 +42,9 @@ const Navbar = ({ toggleSidebar }) => {
           <Link to={"/"} style={{marginTop: 5}}>
             <img src={logo} alt="graff and stuff" />
           </Link>
-          <button type="button" className={styles.toggleBtn} aria-label="menu" onClick={toggleSidebar}>
-            <FaAlignRight />
-          </button>
+
+        <HamburgerButton open={isOpen} toggle={toggleSidebar} aria-label="menu"/>
+
         </div>
         <div className={styles.navLinks}>
           {pageLinks.map((link) => {
