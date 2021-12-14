@@ -1,6 +1,5 @@
 .hero {
-  height: 70vh;
-  /* background: var(--clr-primary-10); */
+  height: 75vh;
   position: relative;
   overflow: hidden;
 }
@@ -12,8 +11,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(65, 61, 61);
-  opacity: 0.2;
+  background-color: rgb(104, 70, 93);
+  opacity: 0.3;
 }
 
 .heroDetails {

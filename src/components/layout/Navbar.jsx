@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/Stuff.svg";
-import { FaAlignRight } from "react-icons/fa";
 import pageLinks from "../../constants/links";
 import { Link } from "gatsby";
 import HamburgerButton from './HamburgerButton';
@@ -10,13 +9,13 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
 
   const [navType, setNavType] = useState('invisible');
 
-  const navRef = React.useRef();
-  navRef.current = navType;
+  // const navRef = React.useRef();
+  // navRef.current = navType;
 
   const dependencies = typeof window !== "undefined" ? [window.location.pathname] : []
 
   useEffect(() => {
-    setNavType()
+    // setNavType()
     if (window.location.pathname === '/') {
       setNavType('invisible')
     } else {

@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Tagline() {
+function Testimonial() {
   return (
-    <div style={{height: '60vh', width: '100%', backgroundColor: 'white'}}></div>
+    <div style={{height: '60vh', width: '100%', backgroundColor: 'white'}}>
+      <h1>Testimonial Section</h1>
+    </div>
   )
 }
 
-export default Tagline
+export default Testimonial;

@@ -18,17 +18,19 @@
     "gatsby": "^3.2.1",
     "gatsby-plugin-image": "^1.2.1",
     "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-source-strapi": "^1.0.2",
     "gatsby-transformer-sharp": "^3.2.0",
+    "rc-banner-anim": "^2.4.5",
+    "rc-tween-one": "^3.0.3",
     "react": "^17.0.1",
     "react-animated-burgers": "^1.2.8",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
-    "react-responsive-carousel": "^3.2.22",
-    "react-scroll-parallax": "^2.4.0"
+    "react-player": "^2.9.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"

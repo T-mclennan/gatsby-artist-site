@@ -5,6 +5,7 @@ import CarouselSection from "../components/homepage/CarouselSection";
 import Tagline from "../components/homepage/Tagline";
 import Testimonial from "../components/homepage/Testimonial";
 import CallToAction from "../components/homepage/CallToAction";
+import Video from "../components/homepage/Video";
 import Seo from "../components/Seo";
 
 const IndexPage = () => {
@@ -15,8 +16,9 @@ const IndexPage = () => {
         <div style={{background: "white", zIndex: 1}} >
           <Tagline />
           <CarouselSection />
-          <Testimonial />
           <CallToAction />
+          <Video />
+          <Testimonial />
         </div>
       </main>
     </>

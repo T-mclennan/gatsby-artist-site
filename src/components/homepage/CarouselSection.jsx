@@ -1,59 +1,37 @@
-import React from 'react'
-import { Carousel, Button } from 'antd';
+import React from 'react';
+import { Link } from "gatsby";
+import { Carousel } from 'antd';
+import TweenOne from 'rc-tween-one';
 import { StaticImage } from "gatsby-plugin-image";
 import 'antd/dist/antd.css';
+import * as styles from './CarouselSection.module.css';
 
 
 function CarouselSection() {
 
-  const contentStyle = {
-    height: '75vh',
-    color: '#364d79',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: 'white',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'relative',
-  };
-
-  // const container ={
-  //   height: '80vh',
-  //   width: '100%',
-  //   backgroundColor: 'pink',
-  //   color: 'whitesmoke',
-  //   display: 'flex',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   position: 'relative',
-  // }
-
-  const muralHeader = {
-    position: 'absolute',
-    zIndex: 10,
-    width: '100%',
-    height: '100%',
-    color: 'white',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-
   return (
-
-
     <section id="carousel-content" style={{backgroundColor: 'white'}}>
       <Carousel arrows autoplay effect="fade">
         <>
-          <div style={contentStyle}>
-            <header style={muralHeader}>
-              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural Title</h2>
-              <Button>See it Now!</Button>
+          <div className={styles.contentStyle}>
+            <header className={styles.muralHeader}>
+              <TweenOne className={styles.headerText} animation={{ y: 30, opacity: 0, type: 'from' }}>
+                <h1 className={styles.headerText}>
+                  <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
+                    This is a Mural 1
+                  </span>
+                </h1>
+              </TweenOne>
+              <TweenOne className="banner-user-text" 
+                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+              >
+                <Link to="/about" className="btn">
+                  See It Now!
+                </Link>
+              </TweenOne>
             </header>
             <StaticImage 
-              height={800}
+              // height={800}
               src="../../assets/images/graff1.jpg"
               alt="header image"
               className="hero-img"
@@ -62,14 +40,23 @@ function CarouselSection() {
           </div>
         </>
         <>
-          <div style={contentStyle}>
-          <header style={muralHeader}>
-              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural Title</h2>
-              <Button>See it Now!</Button>
+          <div className={styles.contentStyle}>
+            <header className={styles.muralHeader}>
+              <TweenOne className={styles.headerText} animation={{ y: 30, opacity: 0, type: 'from' }}>
+                <h1 className={styles.headerText}>
+                  <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
+                    This is a Mural 2
+                  </span>
+                </h1>
+              </TweenOne>
+              <TweenOne animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}>
+                <Link to="/about" className="btn">
+                  See It Now!
+                </Link>
+              </TweenOne>
             </header>
             <StaticImage 
-              // height={1000}
-              height={800}
+              // height={800}
               src="../../assets/images/graff2.jpg"
               alt="header image"
               className="hero-img"
@@ -77,36 +64,36 @@ function CarouselSection() {
             />
           </div>
         </>
-        <>
-        <div style={contentStyle}>
-        <header style={muralHeader}>
-              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural Title</h2>
+        {/* <>
+        <div className={styles.contentStyle}>
+            <header className={styles.muralHeader}>
+              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural 3</h2>
               <Button>See it Now!</Button>
             </header>
             <StaticImage 
-              height={800}
+              // height={800}
               src="../../assets/images/graff3.jpg"
               alt="header image"
-              className="hero-img"
+              className="heroImg"
               placeholder="blurred"
             />
           </div>
         </>
         <>
-        <div style={contentStyle}>
-        <header style={muralHeader}>
-              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural Title</h2>
+        <div className={styles.contentStyle}>
+            <header className={styles.muralHeader}>
+              <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural 4</h2>
               <Button>See it Now!</Button>
             </header>
             <StaticImage 
-              height={800}
+              // height={800}
               src="../../assets/images/guy-spray.jpg"
               alt="header image"
-              className="hero-img"
+              className="heroImg"
               placeholder="blurred"
             />
           </div>
-        </>
+        </> */}
       </Carousel>
     </section>
   )
