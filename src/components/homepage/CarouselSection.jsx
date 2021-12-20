@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { Carousel } from 'antd';
-import TweenOne from 'rc-tween-one';
 import { StaticImage } from "gatsby-plugin-image";
 import 'antd/dist/antd.css';
 import * as styles from './CarouselSection.module.css';
@@ -15,20 +14,14 @@ function CarouselSection() {
         <>
           <div className={styles.contentStyle}>
             <header className={styles.muralHeader}>
-              <TweenOne className={styles.headerText} animation={{ y: 30, opacity: 0, type: 'from' }}>
-                <h1 className={styles.headerText}>
-                  <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
-                    This is a Mural 1
-                  </span>
-                </h1>
-              </TweenOne>
-              <TweenOne className="banner-user-text" 
-                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-              >
-                <Link to="/about" className="btn">
-                  See It Now!
-                </Link>
-              </TweenOne>
+              <h1 className={styles.headerText}>
+                <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
+                  This is a Mural 1
+                </span>
+              </h1>
+              <Link to="/about" className="btn">
+                See It Now!
+              </Link>
             </header>
             <StaticImage 
               // height={800}
@@ -42,18 +35,14 @@ function CarouselSection() {
         <>
           <div className={styles.contentStyle}>
             <header className={styles.muralHeader}>
-              <TweenOne className={styles.headerText} animation={{ y: 30, opacity: 0, type: 'from' }}>
-                <h1 className={styles.headerText}>
-                  <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
-                    This is a Mural 2
-                  </span>
-                </h1>
-              </TweenOne>
-              <TweenOne animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}>
-                <Link to="/about" className="btn">
-                  See It Now!
-                </Link>
-              </TweenOne>
+              <h1 className={styles.headerText}>
+                <span style={{padding: '0.25rem', backgroundColor: 'rgba(0, 0, 0, 0.)'}}>
+                  This is a Mural 2
+                </span>
+              </h1>
+              <Link to="/about" className="btn">
+                See It Now!
+              </Link>
             </header>
             <StaticImage 
               // height={800}
