@@ -4,12 +4,13 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+ require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 //  collectionTypes
 module.exports = {
-  /* Your site config here */
-
   plugins: [
-
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

@@ -18,7 +18,6 @@ const Hero = () => {
             data-sal-delay="300" 
             data-sal-easing="ease" 
           >
-            {/* <h3 className={styles.heroText}>Graff and Stuff</h3> */}
             <h1 className={styles.heroText}>Graff and Stuff</h1>
             <Link to="/about" className="btn center-btn">
               See Gallery

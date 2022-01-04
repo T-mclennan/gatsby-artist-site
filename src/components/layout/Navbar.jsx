@@ -34,10 +34,6 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <Link to={"/"} style={{marginTop: 5}}
-            data-sal="slide-up"
-            data-sal-duration="500" 
-            data-sal-delay="0" 
-            data-sal-easing="easeInOutBack" 
           >
             <img src={logo} alt="graff and stuff" />
           </Link>

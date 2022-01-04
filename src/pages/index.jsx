@@ -6,22 +6,21 @@ import Tagline from "../components/homepage/Tagline";
 import Testimonial from "../components/homepage/Testimonial";
 import CallToAction from "../components/homepage/CallToAction";
 import Video from "../components/homepage/Video";
+import PageWrapper from "../components/PageWrapper"
 import Seo from "../components/Seo";
 
 const IndexPage = () => {
   return (
-    <>
-      <main>
-        <Hero />
-        <div style={{background: "white", zIndex: 1}} >
-          <Tagline />
-          <CarouselSection />
-          <CallToAction />
-          <Video />
-          <Testimonial />
-        </div>
-      </main>
-    </>
+    <main style={{minHeight: 'calc(100vh - 6rem)'}}>
+      <Hero />
+      <div style={{background: "white", zIndex: 1}} >
+        <Tagline />
+        <CarouselSection />
+        <CallToAction />
+        <Video />
+        <Testimonial />
+      </div>
+    </main>
   )
 }
 

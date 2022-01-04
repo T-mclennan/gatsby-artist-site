@@ -11,7 +11,7 @@ function CarouselSection() {
   return (
     <section id="carousel-content" style={{backgroundColor: 'white'}}>
       <Carousel arrows autoplay effect="fade">
-        <>
+        {/* <>
           <div className={styles.contentStyle}>
             <header className={styles.muralHeader}>
               <h1 className={styles.headerText}>
@@ -20,7 +20,7 @@ function CarouselSection() {
                 </span>
               </h1>
               <Link to="/about" className="btn">
-                See It Now!
+                See Mural
               </Link>
             </header>
             <StaticImage 
@@ -52,12 +52,14 @@ function CarouselSection() {
               placeholder="blurred"
             />
           </div>
-        </>
-        {/* <>
+        </> */}
+        <>
         <div className={styles.contentStyle}>
             <header className={styles.muralHeader}>
               <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural 3</h2>
-              <Button>See it Now!</Button>
+              <Link to="/about" className="btn">
+                See Mural
+              </Link>
             </header>
             <StaticImage 
               // height={800}
@@ -72,7 +74,9 @@ function CarouselSection() {
         <div className={styles.contentStyle}>
             <header className={styles.muralHeader}>
               <h2 style={{color: 'white', backgroundColor: 'rgba(0, 0, 0, 1,)'}}>This is a Mural 4</h2>
-              <Button>See it Now!</Button>
+              <Link to="/about" className="btn">
+                See Mural
+              </Link>
             </header>
             <StaticImage 
               // height={800}
@@ -82,7 +86,7 @@ function CarouselSection() {
               placeholder="blurred"
             />
           </div>
-        </> */}
+        </>
       </Carousel>
     </section>
   )

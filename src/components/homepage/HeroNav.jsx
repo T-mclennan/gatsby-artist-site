@@ -8,7 +8,12 @@ import * as styles from '../layout/Navbar.module.css';
 const HeroNav = () => {
 
   return ( 
-    <nav className={styles.heroNav}>
+    <nav className={styles.heroNav}
+      data-sal="fade"
+      data-sal-duration="1000" 
+      data-sal-delay="750" 
+      // data-sal-easing="easeInOutBack" 
+    >
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <Link to={"/"} style={{marginTop: 5}}>
