@@ -42,9 +42,10 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
+        // apiURL: `https://graff-and-stuff-dashboard.herokuapp.com/`,
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`job`],
+        collectionTypes: [],
         // singleTypes: [`home-page`, `contact`],
       },
     },

@@ -13,9 +13,11 @@ const Layout = ({children}) => {
   }
   return (
     <>
-      <Navbar toggleSidebar={toggleSidebar} isOpen={isOpen}/>
+      <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen}/>
-      {children}
+      <div style={{minHeight: 'calc(100vh - 6rem)' }}>
+        {children}
+      </div>
       <Footer/>
     </>
   )

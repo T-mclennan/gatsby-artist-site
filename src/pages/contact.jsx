@@ -2,12 +2,15 @@ import React from "react";
 import Seo from "../components/Seo";
 import PageWrapper from "../components/PageWrapper";
 import ContactForm from "../components/input/ContactForm";
+import * as styles from './contact.module.css';
 
 const contact = () => {
   return (
     <PageWrapper>
-      <h2>contact page</h2>
-      <ContactForm />
+      <section className={styles.formContainer}>
+        <p className={styles.header}>Contact Us</p>
+        <ContactForm />
+      </section>
     </PageWrapper>
   )
 }

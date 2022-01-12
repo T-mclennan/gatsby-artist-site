@@ -11,8 +11,8 @@ const data = [
   },
   {
     id: 3,
-    text: "prints",
-    url: "/prints/",
+    text: "gallery",
+    url: "/gallery/",
   },
   {
     id: 4,

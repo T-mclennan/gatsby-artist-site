@@ -1,14 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Projects from "../components/Projects"
 import Seo from "../components/Seo"
 import PageWrapper from "../components/PageWrapper"
 
-const Error = () => {
+const GalleryPage = () => {
   return (
     <PageWrapper>
-      <h2>Yo, page not found!</h2>
+      <h2>Gallery page</h2>
     </PageWrapper>
   )
 }
 
-export default Error
+export default GalleryPage

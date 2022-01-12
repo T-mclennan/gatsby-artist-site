@@ -92,14 +92,36 @@ Navbar
     padding: 0.5rem 0;
   }
 
+  .navLinks a::after {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    bottom: 10%;
+    left: 5%;
+    height: 1px;
+    max-width: 90%;
+    width: 0%;
+    background-color: var(--clr-primary-5);
+    transition: var(--transition);
+    opacity: 0.3
+  }
+
+  .navLinks a:hover::after {
+    width: 100%;
+    opacity: 0.7;
+  }
+
   .heroNav a {
     color: white;
   }
 
   .navLinks a:hover {
     color: var(--clr-primary-5);
-    box-shadow: 0px 1px var(--clr-primary-5);
+    /* box-shadow: 0px 1px var(--clr-primary-5); */
   }
+
+
+   
   .navCenter {
     display: grid;
     grid-template-columns: auto 1fr;

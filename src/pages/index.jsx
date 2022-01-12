@@ -11,7 +11,7 @@ import Seo from "../components/Seo";
 
 const IndexPage = () => {
   return (
-    <main style={{minHeight: 'calc(100vh - 6rem)'}}>
+    <main>
       <Hero />
       <div style={{background: "white", zIndex: 1}} >
         <Tagline />

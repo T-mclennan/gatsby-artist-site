@@ -5,9 +5,9 @@ import * as styles from './PageWrapper.module.css';
 const PageWrapper = ({children}) => {
 
   return (
-    <section className={styles.page}>
+    <main className={styles.page}>
       {children}
-    </section>
+    </main>
   )
 }
 

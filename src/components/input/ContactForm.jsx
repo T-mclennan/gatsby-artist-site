@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import { Form, Input, Button} from 'antd';
+import { UserOutlined, EditOutlined } from '@ant-design/icons';
 import axios from 'axios';
+import * as styles from './ContactForm.module.css';
+
 
 const { TextArea } = Input;
 const inputStyle = {
@@ -82,10 +85,9 @@ function ContactForm() {
   }
 
   return (
-      <>
+      <section style={{margin: '2rem 4rem 4rem 4rem', width: '100%'}}>
         {!status.submitted && 
         <Form 
-          style={{width: '100%', maxWidth: '25rem'}}
           wrapperCol={{ span: 24 }}
           initialValues={{ remember: true }}
           onFinish={onSubmit}
@@ -104,6 +106,7 @@ function ContactForm() {
               },
             ]}>
             <Input
+              prefix={<UserOutlined  className={styles.icon}/>}
               id="email"
               type="email"
               name="_replyto"
@@ -111,6 +114,7 @@ function ContactForm() {
               onChange={handleOnChange}
               required
               value={inputs.email}
+              label="email"
             />
           </Form.Item>
           <Form.Item
@@ -141,19 +145,19 @@ function ContactForm() {
             onChange={onReCAPTCHAChange}
           />
 	  
-          <Button htmlType="submit" disabled={status.submitting} >
+          <button htmlType="submit" disabled={status.submitting} className={styles.contactButton}>
             {!status.submitting
               ? !status.submitted
                 ? 'Submit'
                 : 'Submitted'
               : 'Submitting...'}
-          </Button>
+          </button>
         </Form>}
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
         {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
-    </>
+    </section>
   )
 }
 
