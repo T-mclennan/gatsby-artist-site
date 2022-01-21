@@ -6,9 +6,9 @@ import './Footer.css'
 const Footer = () => {
   return (<footer className="footer">
       <div>
-        <h4>copyright&copy;{new Date().getFullYear()}
+        <h5>copyright&copy;{new Date().getFullYear()}
           <span>Graff and Stuff</span> all rights reserved
-        </h4>
+        </h5>
       </div>
     </footer>)
 }

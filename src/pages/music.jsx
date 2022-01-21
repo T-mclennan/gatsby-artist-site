@@ -7,7 +7,7 @@ import PageWrapper from "../components/PageWrapper"
 const MusicPage = () => {
   return (
     <PageWrapper>
-      <h2>Music page</h2>
+      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Music Page</h2>
     </PageWrapper>
   )
 }

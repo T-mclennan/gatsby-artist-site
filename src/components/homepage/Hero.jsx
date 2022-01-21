@@ -1,40 +1,29 @@
 import React from "react"
 import { Link } from "gatsby";
 import socialLinks from "../../constants/social_links";
+import background from '../../assets/images/optimized/octopus.webp';
+import FixedBackground from '../../components/homepage/FixedBackground';
 import { StaticImage } from "gatsby-plugin-image";
 import HeroNav from './HeroNav';
+import HeroContent from './HeroContent';
 import * as styles from './Hero.module.css';
-
 
 const Hero = () => {
   return (
-    <header className={styles.hero}>
-
-        <HeroNav />
-        <div className={styles.heroDetails}>
-          <div className={styles.heroText}       
-            data-sal="slide-up"
-            data-sal-duration="1000" 
-            data-sal-delay="300" 
-            data-sal-easing="ease" 
-          >
-            <h1 className={styles.heroText}>Graff and Stuff</h1>
-            <Link to="/about" className="btn center-btn">
-              See Gallery
-            </Link>
-          </div>
+    <FixedBackground image={background} gradient='linear-gradient(rgba(230, 100, 101, 0.8), rgba(145, 152, 229, 0.8))'>
+      <HeroNav />
+        <div className={styles.heroText}       
+          data-sal="slide-up"
+          data-sal-duration="1000" 
+          data-sal-delay="300" 
+          data-sal-easing="ease" 
+        >
+          <h1 className={styles.heroText}>Graff and Stuff</h1>
+          <Link to="/about" className="btn center-btn">
+            See Gallery
+          </Link>
         </div>
-
-        <div className={styles.background}>
-          <StaticImage 
-            src="../../assets/images/hallway.jpg"
-            alt="header image"
-            className="hero-img"
-            placeholder="blurred"
-          />
-        </div>
-
-    </header>
+    </FixedBackground>
   )
 }
 

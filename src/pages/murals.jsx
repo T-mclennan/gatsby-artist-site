@@ -7,7 +7,7 @@ import PageWrapper from "../components/PageWrapper"
 const MuralsPage = () => {
   return (
     <PageWrapper>
-      <h2>Murals page</h2>
+      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Mural Page</h2>
     </PageWrapper>
   )
 }

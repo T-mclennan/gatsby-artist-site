@@ -7,7 +7,7 @@ import PageWrapper from "../components/PageWrapper"
 const GalleryPage = () => {
   return (
     <PageWrapper>
-      <h2>Gallery page</h2>
+      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Gallery page</h2>
     </PageWrapper>
   )
 }

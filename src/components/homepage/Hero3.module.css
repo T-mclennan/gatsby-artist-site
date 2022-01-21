@@ -1,0 +1,54 @@
+/* html,body {
+  height: 100%;
+} */
+
+/* .wrapper {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  height: 100%;
+} */
+
+.fixedBg {
+  /* height: 100vh;  */
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.fixedBg h1 {
+  /* display: table-cell; */
+  vertical-align: middle;
+  color: white !important;
+}
+
+.scrollBg {
+  padding: 10px 70px;
+  color: #676767;
+}
+
+/* first section */
+
+.bg1 {
+  background-image: url('../../assets/images/adrian-raudaschl.jpg');
+}
+
+/* third section */
+
+.bg2 {
+  background-image: url('../../assets/images/bp-miller-N.jpg');
+}
+
+/* fifth section */
+
+.bg3 {
+  background-image: url('../../assets/images/ubu-komarovajpg.jpg');
+}
