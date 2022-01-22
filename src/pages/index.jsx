@@ -6,10 +6,9 @@ import Tagline from "../components/homepage/Tagline";
 import Testimonial from "../components/homepage/Testimonial";
 import CallToAction from "../components/homepage/CallToAction";
 import Video from "../components/homepage/Video";
-import PageWrapper from "../components/PageWrapper"
 import FixedBackground from '../components/homepage/FixedBackground';
-import bg1 from '../assets/images/alp-ancel.jpg'
-import bg2 from '../assets/images/char-beck.jpg'
+import bg1 from '../assets/images/optimized/alp-ancel.webp';
+import bg2 from '../assets/images/optimized/char-beck.webp';
 
 
 import Seo from "../components/Seo";
