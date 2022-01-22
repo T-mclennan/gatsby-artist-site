@@ -1,9 +1,19 @@
 import React from 'react'
 
 function Testimonial() {
+
+  const sampleStyle = {
+    height: '40vh',
+    width: '100%', 
+    backgroundColor: 'lightgray',
+    display: 'flex', 
+    justifyContent: 'center', 
+    alignItems: 'center'
+  }
+
   return (
-    <div style={{height: '60vh', width: '100%', backgroundColor: 'white'}}>
-      <h1>Testimonial Section</h1>
+    <div style={sampleStyle}>
+      <h3 style={{color: 'white'}}>Testimonial Section</h3>
     </div>
   )
 }

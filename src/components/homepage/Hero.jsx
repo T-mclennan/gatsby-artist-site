@@ -3,9 +3,7 @@ import { Link } from "gatsby";
 import socialLinks from "../../constants/social_links";
 import background from '../../assets/images/optimized/octopus.webp';
 import FixedBackground from '../../components/homepage/FixedBackground';
-import { StaticImage } from "gatsby-plugin-image";
 import HeroNav from './HeroNav';
-import HeroContent from './HeroContent';
 import * as styles from './Hero.module.css';
 
 const Hero = () => {
@@ -19,7 +17,7 @@ const Hero = () => {
           data-sal-easing="ease" 
         >
           <h1 className={styles.heroText}>Graff and Stuff</h1>
-          <Link to="/about" className="btn center-btn">
+          <Link to="/gallery" className="btn center-btn">
             See Gallery
           </Link>
         </div>

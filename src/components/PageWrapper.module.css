@@ -5,5 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-primary-10);
+  /* background-color: var(--clr-grey-10); */
+  border-top: 1px solid var(--primary-1)
 }
