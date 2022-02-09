@@ -25,8 +25,7 @@ const IndexPage = ({data}) => {
     <main>
       <Hero />
       <Tagline />
-      {/* <CarouselSection /> */}
-      <Projects projects={projects} title="recent projects" showLink/>
+      <Projects projects={projects} title="Latest Projects" showLink/>
       <FixedBackground image={bg1} gradient={imageGradient}/>
       <CallToAction />
       <FixedBackground image={bg2} gradient={imageGradient}/>
