@@ -6,8 +6,8 @@ const data = [
   },
   {
     id: 2,
-    text: "murals",
-    url: "/murals/",
+    text: "projects",
+    url: "/projects/",
   },
   {
     id: 3,

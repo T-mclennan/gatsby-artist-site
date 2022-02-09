@@ -1,0 +1,23 @@
+import React from 'react';
+import Project from '../../components/Project';
+import Title from '../../components/Title';
+import { Link } from 'gatsby';
+import * as styles from '../Project.module.css';
+
+
+function Projects({projects, title, showLink}) {
+
+  return (
+    <section className={styles.section}>
+      <Title title={title} />
+      <div className={`${styles.projectsCenter} ${styles.sectionCenter}`}>
+        {projects.map((project) => {
+          return <Project key={project.id} {...project}/>
+        })}
+      </div>
+      {showLink && <Link to="/projects" className="btn center-btn">all projects</Link>}
+    </section>
+  )
+}
+
+export default Projects;

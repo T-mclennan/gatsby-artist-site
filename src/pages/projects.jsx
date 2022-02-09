@@ -4,12 +4,12 @@ import Projects from "../components/Projects"
 import Seo from "../components/Seo"
 import PageWrapper from "../components/PageWrapper"
 
-const MuralsPage = () => {
+const ProjectsPage = () => {
   return (
     <PageWrapper>
-      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Mural Page</h2>
+      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Projects Page</h2>
     </PageWrapper>
   )
 }
 
-export default MuralsPage
+export default ProjectsPage

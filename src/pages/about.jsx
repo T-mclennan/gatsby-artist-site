@@ -7,7 +7,8 @@ import PageWrapper from "../components/PageWrapper"
 const About = () => {
   return (
     <PageWrapper>
-      <h2 style={{fontFamily: 'var(--ff-marker)'}}>About page</h2>
+      {/* <h2 style={{fontFamily: 'var(--ff-marker)'}}>About page</h2> */}
+      
     </PageWrapper>
   )
 }

@@ -8,7 +8,6 @@
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-//  collectionTypes
 module.exports = {
   plugins: [
     {
@@ -42,11 +41,11 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        // apiURL: `https://graff-and-stuff-dashboard.herokuapp.com/`,
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Defaults to 100
-        collectionTypes: [],
-        // singleTypes: [`home-page`, `contact`],
+        apiURL: `https://graff-and-stuff-dashboard.herokuapp.com`,
+        // apiURL: `http://localhost:1337`,
+        queryLimit: 1000, 
+        collectionTypes: ['project', 'artist'],
+        // singleTypes: [],
       },
     },
     { 

@@ -7,9 +7,6 @@ import * as styles from './ContactForm.module.css';
 
 
 const { TextArea } = Input;
-const inputStyle = {
-  margin: '0.5rem'
-}
 
 function ContactForm() {
 
@@ -91,7 +88,8 @@ function ContactForm() {
           wrapperCol={{ span: 24 }}
           initialValues={{ remember: true }}
           onFinish={onSubmit}
-          autoComplete="off">
+          autoComplete="off"
+        >
 
           <Form.Item
             name="email"
@@ -156,7 +154,7 @@ function ContactForm() {
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
-        {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+        {!status.info.error && status.info.msg && <p >{status.info.msg}</p>}
     </section>
   )
 }
