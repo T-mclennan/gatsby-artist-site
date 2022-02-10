@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~components": ["src/components"],
+      "~constants": ["src/constants"],
+      "~hooks": ["src/hooks"],
+      "~layout": ["src/components/layout"],
+      "~input": ["src/components/input"],
+      "~homepage": ["src/components/homepage"],
+      "~projects": ["src/components/projects"],
+      "~music": ["src/components/music"],
+      "~about": ["src/components/about"],
+    }
+  }
+}
