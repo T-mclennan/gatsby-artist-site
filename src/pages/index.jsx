@@ -1,13 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby";
-import Hero from "../components/homepage/Hero";
-import CarouselSection from "../components/homepage/CarouselSection";
-import Seo from "../components/Seo";
-import Tagline from "../components/homepage/Tagline";
-import Testimonial from "../components/homepage/Testimonial";
-import Projects from "../components/homepage/Projects";
-import CallToAction from "../components/homepage/CallToAction";
-import FixedBackground from '../components/homepage/FixedBackground';
+import Projects from "~projects";
+import Seo from "~components/Seo";
+import Hero from "~homepage/Hero";
+import Tagline from "~homepage/Tagline";
+import Testimonial from "~homepage/Testimonial";
+import CallToAction from "~homepage/CallToAction";
+import FixedBackground from '~homepage/FixedBackground';
 import bg1 from '../assets/images/optimized/alp-ancel.webp';
 import bg2 from '../assets/images/optimized/char-beck.webp';
 

@@ -31,7 +31,7 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
     <nav className={navType === 'navbar' ? styles.navbar : styles.invisible}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <Link to={"/"} style={{marginTop: 5}} onClick={() => isOpen ? toggleSidebar : ''}
+          <Link to={"/"} style={{marginTop: 5}} onClick={isOpen ? toggleSidebar : () => {}}
           >
             <img src={logo} alt="graff and stuff" />
           </Link>

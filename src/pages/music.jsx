@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Projects from "../components/Projects"
+import Projects from "../components/projects"
 import Seo from "../components/Seo"
-import PageWrapper from "../components/PageWrapper"
-import Video from "../components/Video";
+import PageWrapper from "../components/layout/PageWrapper"
+import Video from "../components/music/Video";
 
 
 const playerWrapper = {

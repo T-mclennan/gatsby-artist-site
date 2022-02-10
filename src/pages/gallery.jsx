@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Projects from "../components/Projects"
-import Seo from "../components/Seo"
-import PageWrapper from "../components/PageWrapper"
+import Projects from "~projects"
+import Seo from "~components/Seo"
+import PageWrapper from "~layout/PageWrapper"
 
 const GalleryPage = () => {
   return (

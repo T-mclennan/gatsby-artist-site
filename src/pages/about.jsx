@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
-import PageWrapper from "../components/PageWrapper"
+import PageWrapper from "~components/layout/PageWrapper"
 
 const About = () => {
   return (

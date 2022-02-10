@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Seo from "../components/Seo"
-import PageWrapper from "../components/PageWrapper"
+import PageWrapper from "../components/layout/PageWrapper"
 
 const Error = () => {
   return (
