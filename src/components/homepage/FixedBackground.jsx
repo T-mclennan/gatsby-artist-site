@@ -1,10 +1,11 @@
 import React from 'react'
 import * as styles from './Hero.module.css';
 
-function FixedBackground({image, gradient, children}) {
+function FixedBackground({height, image, gradient, children}) {
 
   const backgroundStyle = {
-    backgroundImage: gradient ? `url(${image}), ${gradient}` : `url(${image})`
+    backgroundImage: gradient ? `url(${image}), ${gradient}` : `url(${image})`,
+    height: `${height}vh`,
   }
 
   return (

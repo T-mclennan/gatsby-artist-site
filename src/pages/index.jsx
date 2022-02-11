@@ -25,9 +25,9 @@ const IndexPage = ({data}) => {
       <Hero />
       <Tagline />
       <Projects projects={projects} title="Latest Projects" showLink/>
-      <FixedBackground image={bg1} gradient={imageGradient}/>
+      <FixedBackground image={bg1} gradient={imageGradient} height={60}/>
       <CallToAction />
-      <FixedBackground image={bg2} gradient={imageGradient}/>
+      <FixedBackground image={bg2} gradient={imageGradient} height={60}/>
       <Testimonial />
     </main>
   )
