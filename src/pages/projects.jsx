@@ -1,13 +1,19 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Projects from "../components/projects"
-import Seo from "../components/Seo"
-import PageWrapper from "../components/layout/PageWrapper"
+import React from "react";
+import { graphql } from "gatsby";
+import Projects from "~projects";
+import Seo from "../components/Seo";
+import PageWrapper from "~layout/PageWrapper";
 
-const ProjectsPage = () => {
+const ProjectsPage = ({data}) => {
+
+  const { 
+    allStrapiProject: { nodes: projects},
+    // allStrapiArtist: { nodes: artists}
+  } = data;
+
   return (
     <PageWrapper>
-      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Projects Page</h2>
+      <Projects projects={projects} title="All Projects"/>
     </PageWrapper>
   )
 }
@@ -18,7 +24,7 @@ const ProjectsPage = () => {
 
 export const query = graphql`
   {
-    allStrapiProject(sort: {fields: date, order: DESC}, limit: 3) {
+    allStrapiProject(sort: {fields: date, order: DESC}) {
       nodes {
         slug
         content
