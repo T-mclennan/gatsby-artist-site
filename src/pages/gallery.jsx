@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Projects from "~projects"
-import Seo from "~components/Seo"
 import PageWrapper from "~layout/PageWrapper"
 
 const GalleryPage = ({data}) => {
@@ -12,7 +10,7 @@ const GalleryPage = ({data}) => {
 
   console.log(galleryData)
   return (
-    <PageWrapper>
+    <PageWrapper pageName="Gallery">
       <h2 style={{fontFamily: 'var(--ff-marker)'}}>Gallery page</h2>
     </PageWrapper>
   )

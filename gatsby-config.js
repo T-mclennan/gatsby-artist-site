@@ -12,7 +12,7 @@ module.exports = {
   siteMetadata: {
     title: 'Graph and Stuff Artist Website',
     description: `Community website for Artists and Muralists in Santa Cruz, California`,
-    titleTemplate: `%s | Graph and Stuff Artist Website`,
+    titleTemplate: `%s | Graph and Stuff`,
     url: `https://nostalgic-rosalind-972fdc.netlify.app`,
     twitterUsername: '@graff_and_stuff',
     image: '/main-img.png',

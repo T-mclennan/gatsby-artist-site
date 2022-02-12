@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Projects from "../components/projects"
-import Seo from "../components/Seo"
 import PageWrapper from "../components/layout/PageWrapper"
 import Video from "../components/music/Video";
 
@@ -17,8 +15,9 @@ const playerWrapper = {
 }
 
 const MusicPage = () => {
+  
   return (
-    <PageWrapper>
+    <PageWrapper pageName="Music">
       <h2 style={{fontFamily: 'var(--ff-marker)', margin: '1rem 0'}}>Music Page</h2>
       <div style={playerWrapper}>
         <Video

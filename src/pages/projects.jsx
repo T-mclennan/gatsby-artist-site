@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Projects from "~projects";
-import Seo from "../components/Seo";
 import PageWrapper from "~layout/PageWrapper";
 
 const ProjectsPage = ({data}) => {
@@ -11,8 +10,9 @@ const ProjectsPage = ({data}) => {
     // allStrapiArtist: { nodes: artists}
   } = data;
 
+  console.log(projects)
   return (
-    <PageWrapper>
+    <PageWrapper pageName="Projects">
       <Projects projects={projects} title="All Projects"/>
     </PageWrapper>
   )

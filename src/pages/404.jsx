@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Seo from "../components/Seo"
-import PageWrapper from "../components/layout/PageWrapper"
+import PageWrapper from "~layout/PageWrapper"
 
 const Error = () => {
   return (
-    <PageWrapper>
+    <PageWrapper pageName="Page not found">
       <h2>Yo, page not found!</h2>
     </PageWrapper>
   )

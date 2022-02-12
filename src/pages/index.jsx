@@ -21,15 +21,18 @@ const IndexPage = ({data}) => {
   const imageGradient = 'linear-gradient(rgba(230, 100, 101, 0.4), rgba(145, 152, 229, 0.4))';
   
   return (
-    <main>
-      <Hero />
-      <Tagline />
-      <Projects projects={projects} title="Latest Projects" showLink/>
-      <FixedBackground image={bg1} gradient={imageGradient} height={60}/>
-      <CallToAction />
-      <FixedBackground image={bg2} gradient={imageGradient} height={60}/>
-      <Testimonial />
-    </main>
+    <>
+      <Seo title="Home"/>
+      <main>
+        <Hero />
+        <Tagline />
+        <Projects projects={projects} title="Latest Projects" showLink/>
+        <FixedBackground image={bg1} gradient={imageGradient} height={60}/>
+        <CallToAction />
+        <FixedBackground image={bg2} gradient={imageGradient} height={60}/>
+        <Testimonial />
+      </main>
+    </>
   )
 }
 
