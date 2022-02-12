@@ -9,6 +9,15 @@
 })
 
 module.exports = {
+  siteMetadata: {
+    title: 'Graph and Stuff Artist Website',
+    description: `Community website for Artists and Muralists in Santa Cruz, California`,
+    titleTemplate: `%s | Graph and Stuff Artist Website`,
+    url: `https://nostalgic-rosalind-972fdc.netlify.app`,
+    twitterUsername: '@graff_and_stuff',
+    image: '/main-img.png',
+
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-scroll-reveal`,
@@ -26,7 +35,6 @@ module.exports = {
           exitEventName: 'sal:out', // Exit event name
       }
     },
-    
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -16,10 +16,10 @@ const IndexPage = ({data}) => {
 
   const { 
     allStrapiProject: { nodes: projects},
-    // allStrapiArtist: { nodes: artists}
   } = data;
 
   const imageGradient = 'linear-gradient(rgba(230, 100, 101, 0.4), rgba(145, 152, 229, 0.4))';
+  
   return (
     <main>
       <Hero />
@@ -54,31 +54,6 @@ export const query = graphql`
         }
       }
     }
-  #     {
-  #   allStrapiArtist {
-  #     group(field: id) {
-  #       nodes {
-  #         Description
-  #         Name
-  #         email
-  #         facebook
-  #         id
-  #         instagram
-  #         twitter
-  #         location
-  #         Picture {
-  #           localFile {
-  #             childImageSharp {
-  #               fluid {
-  #                 ...GatsbyImageSharpFluid
-  #               }
-  #             }
-  #           }
-  #         }
-  #       }
-  #     }
-  #   }
-  # }
   }
 `
 
