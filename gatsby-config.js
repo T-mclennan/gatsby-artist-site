@@ -55,6 +55,12 @@ module.exports = {
         singleTypes: ['homepage', 'gallery', 'about'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/graff-logo-red.png',
+      },
+    },
     // { 
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: {
