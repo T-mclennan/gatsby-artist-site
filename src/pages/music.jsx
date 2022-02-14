@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import PageWrapper from "../components/layout/PageWrapper"
-import Video from "../components/music/Video";
+import PageWrapper from "~layout/PageWrapper"
+import Video from "~components/music/Video";
+import Title from "~components/Title"
 
 
 const playerWrapper = {
@@ -18,7 +19,7 @@ const MusicPage = () => {
   
   return (
     <PageWrapper pageName="Music">
-      <h2 style={{fontFamily: 'var(--ff-marker)', margin: '1rem 0'}}>Music Page</h2>
+      <Title title="Music" mb="1rem"/>
       <div style={playerWrapper}>
         <Video
           videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"

@@ -1,6 +1,6 @@
 .page {
   min-height: calc(100vh - 6rem);
-  padding: 9rem 0 3rem 0;
+  padding: 10rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

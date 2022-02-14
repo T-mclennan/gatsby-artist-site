@@ -19,6 +19,9 @@ module.exports = {
     image: '/main-img.png',
 
   },
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-scroll-reveal`,
@@ -63,7 +66,4 @@ module.exports = {
       },
     },
   ],
-  flags: {
-    DEV_SSR: false,
-  },
 }

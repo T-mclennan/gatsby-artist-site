@@ -2,14 +2,16 @@ import React from "react"
 import { graphql } from "gatsby";
 import Projects from "~projects";
 import Seo from "~components/Seo";
-import Hero from "~homepage/Hero";
-import Tagline from "~homepage/Tagline";
-import Testimonial from "~homepage/Testimonial";
-import CallToAction from "~homepage/CallToAction";
-import FixedBackground from '~homepage/FixedBackground';
-import Slider from '~homepage/Slider';
 import bg1 from '../assets/images/optimized/alp-ancel.webp';
 import bg2 from '../assets/images/optimized/char-beck.webp';
+import { 
+  Hero, 
+  Tagline, 
+  Testimonial, 
+  CallToAction, 
+  Services, 
+  FixedBackground, 
+  Slider } from "~homepage";
 
 
 
@@ -26,12 +28,13 @@ const IndexPage = ({data}) => {
       <Seo title="Home"/>
       <main>
         <Hero />
-        <Tagline />
-        <Projects projects={projects} title="Latest Projects" showLink/>
-        <FixedBackground image={bg1} gradient={imageGradient} height={60}/>
-        <Slider />
         <CallToAction />
-        <FixedBackground image={bg2} gradient={imageGradient} height={60}/>
+        <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
+        <Projects projects={projects} title="Latest Projects" showLink/>
+        <Services />
+        <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/>
+        <Tagline />
+        <Slider />
         <Testimonial />
       </main>
     </>

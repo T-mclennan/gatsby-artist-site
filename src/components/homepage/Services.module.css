@@ -1,0 +1,23 @@
+.services {
+  height: '40vh';
+  width: '100%';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em 1em;
+}
+
+.grid {
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2em;
+}
+
+@media (min-width: 55em) {
+  .grid {
+    grid-auto-flow: column;
+  }
+}

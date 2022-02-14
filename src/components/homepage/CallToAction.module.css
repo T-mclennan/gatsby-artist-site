@@ -1,0 +1,42 @@
+.callToAction {
+  background: white;
+  width: 70vh;
+  padding: 3em;
+  box-shadow: 0 0 3em 0px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ee6352;
+  line-height: 0.8;
+  grid-column: 1 / -1;
+  grid-row: 1/4;
+}
+
+p {
+  grid-column: 1 / -1;
+}
+
+/* .title::before,
+.title::after {
+  content: '';
+  position: absolute;
+
+}
+
+.title::before {
+  background: currentColor;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  grid-column: 4/-1;
+} */

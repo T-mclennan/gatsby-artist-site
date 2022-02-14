@@ -1,6 +1,7 @@
 .swiper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .swiper-slide {
@@ -41,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 60vh;
 }
 
 .slideshow-section {
@@ -73,4 +75,12 @@
   max-width: 80rem;
   min-height: 60vh;
   object-position: center center;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+  z-index: 100;
 }

@@ -2,43 +2,52 @@ import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PageWrapper from "~layout/PageWrapper"
+import Title from "~components/Title";
+import * as styles from './gallery.module.css';
 
 const GalleryPage = ({data}) => {
 
   
-  // const { 
-  //   allStrapiGallery: { nodes: galleryData},
-  // } = data;
+  const { 
+    allStrapiGallery: { nodes: galleryData},
+  } = data;
 
-  // console.log(galleryData)
   return (
     <PageWrapper pageName="Gallery">
-      <h2 style={{fontFamily: 'var(--ff-marker)'}}>Gallery page</h2>
+      <Title title="Gallery"/>
+      <section className={styles.gallery}>
+        {galleryData.map(({id, image, title}) => {
+           const img = getImage(image.localFile);
+           return  (
+              <div key={id} >
+                <GatsbyImage image={img} alt={title} objectFit="cover" trim={100}/>
+              </div>
+             )
+        })}
+      </section>
+
     </PageWrapper>
   )
 }
 
-// export const query = graphql`
-//   # {
-//   #   allStrapiGallery {
-//   #     nodes {
-//   #       Image {
-//   #         IsFeatured
-//   #         Title
-//   #         id
-//   #         Image {
-//   #           localFile {
-//   #             childImageSharp {
-//   #               gatsbyImageData
-//   #             }
-//   #           }
-//   #         }
-//   #       }
-//   #     }
-//   #     totalCount
-//   #   }
-//   # }
-// `
+export const query = graphql`
+  {
+    allStrapiGallery {
+      nodes {
+        id
+        featured
+        title
+        image {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 
 export default GalleryPage
