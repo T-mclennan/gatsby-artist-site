@@ -7,19 +7,14 @@ const ProjectsPage = ({data}) => {
 
   const { 
     allStrapiProject: { nodes: projects},
-    // allStrapiArtist: { nodes: artists}
   } = data;
 
-  console.log(projects)
   return (
     <PageWrapper pageName="Projects">
       <Projects projects={projects} title="All Projects"/>
     </PageWrapper>
   )
 }
-
-
-
 
 
 export const query = graphql`

@@ -8,6 +8,7 @@
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+
 module.exports = {
   siteMetadata: {
     title: 'Graph and Stuff Artist Website',
@@ -51,8 +52,8 @@ module.exports = {
       options: {
         apiURL: process.env.GATSBY_SERVER_URL,
         queryLimit: 1000, 
-        collectionTypes: ['project'],
-        singleTypes: ['homepage', 'gallery', 'about'],
+        collectionTypes: ['project', 'gallery'],
+        singleTypes: ['homepage', 'about'],
       },
     },
     {
@@ -61,16 +62,8 @@ module.exports = {
         icon: 'src/assets/images/graff-logo-red.png',
       },
     },
-    // { 
-    //   resolve: `gatsby-plugin-purgecss`,
-    //   options: {
-    //     printRejected: true, // Print removed selectors and processed file names
-    //     // develop: true, // Enable while using `gatsby develop`
-    //     // tailwind: true, // Enable tailwindcss support
-    //     //whitelist: ['data-sal', 'sal-animate', 'sal-disabled', 'sal:in', 'sal:out'], // Don't remove this selector
-    //     // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-    //     // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-    //   }
-    // }, 
   ],
+  flags: {
+    DEV_SSR: false,
+  },
 }
