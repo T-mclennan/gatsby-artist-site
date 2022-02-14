@@ -3,29 +3,30 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PageWrapper from "~layout/PageWrapper"
 import Title from "~components/Title";
+import Gallery from '@browniebroke/gatsby-image-gallery'
 import * as styles from './gallery.module.css';
 
 const GalleryPage = ({data}) => {
 
-  
-  const { 
-    allStrapiGallery: { nodes: galleryData},
-  } = data;
+  const images = data.allStrapiGallery.edges.map(({ node }) => {
+    return node.image.localFile.childImageSharp;
+  })
+
+  const CustomWrapper = ({ children, onClick }) => (
+    <div className={styles.imageWrapper} onClick={onClick}>
+      {children}
+    </div>
+  )
 
   return (
     <PageWrapper pageName="Gallery">
-      <Title title="Gallery"/>
       <section className={styles.gallery}>
-        {galleryData.map(({id, image, title}) => {
-           const img = getImage(image.localFile);
-           return  (
-              <div key={id} >
-                <GatsbyImage image={img} alt={title} objectFit="cover" trim={100}/>
-              </div>
-             )
-        })}
+        <Title title="Gallery"/>
+        <Gallery 
+          images={images}
+          // customWrapper={CustomWrapper}
+        />
       </section>
-
     </PageWrapper>
   )
 }
@@ -33,14 +34,14 @@ const GalleryPage = ({data}) => {
 export const query = graphql`
   {
     allStrapiGallery {
-      nodes {
-        id
-        featured
-        title
-        image {
-          localFile {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+      edges {
+        node {
+          image {
+            localFile {
+              childImageSharp {
+                thumb: gatsbyImageData(width: 270, height: 270, placeholder: BLURRED)
+                full: gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
           }
         }

@@ -25,10 +25,6 @@ const MusicPage = () => {
           videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
           videoTitle="Official Music Video on YouTube"
         />
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          videoTitle="Official Music Video on YouTube"
-        />
       </div>
     </PageWrapper>
   )

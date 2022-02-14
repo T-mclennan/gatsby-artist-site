@@ -32,10 +32,9 @@ const IndexPage = ({data}) => {
         <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
         <Projects projects={projects} title="Latest Projects" showLink/>
         <Services />
-        <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/>
-        <Tagline />
         <Slider />
-        <Testimonial />
+        <Tagline />
+        <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/>
       </main>
     </>
   )
