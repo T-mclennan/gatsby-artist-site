@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/Stuff.svg";
 import pageLinks from "../../constants/links";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 import HamburgerButton from './HamburgerButton';
 import * as styles from './Navbar.module.css';
 
@@ -50,5 +51,11 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
     </nav>
   )
 }
+
+Navbar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggleSidebar: PropTypes.func.isRequired
+}
+
 
 export default Navbar

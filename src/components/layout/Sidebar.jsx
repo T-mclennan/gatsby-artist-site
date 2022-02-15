@@ -18,7 +18,7 @@ const Sidebar = ({
 
 Sidebar.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  toggleSidebar: PropTypes.func,
+  toggleSidebar: PropTypes.func.isRequired,
 }
 
 export default Sidebar

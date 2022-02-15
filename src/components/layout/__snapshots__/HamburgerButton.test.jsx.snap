@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HamburgerButton Has properly rendered 1`] = `
+<div>
+  <button
+    aria-label="Navigation"
+    className="sc-bdvvtL dzuxJW"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-gsDKAQ lbFyhs"
+    >
+      <span
+        className="sc-dkPtRN sc-fFeiMQ eZphlh joKDaR"
+      />
+    </div>
+  </button>
+</div>
+`;

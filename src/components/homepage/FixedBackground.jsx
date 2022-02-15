@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import * as styles from './Hero.module.css';
 
 function FixedBackground({height="100%", image, gradient, children}) {
@@ -13,6 +14,13 @@ function FixedBackground({height="100%", image, gradient, children}) {
       {children}
     </section>
   )
+}
+
+FixedBackground.propTypes = {
+  height: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  gradient: PropTypes.string,
+  children: PropTypes.element,
 }
 
 export default FixedBackground

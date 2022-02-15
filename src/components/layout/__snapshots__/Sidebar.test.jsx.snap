@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar Has properly rendered 1`] = `
+<aside
+  className="sidebar show-sidebar"
+  data-test="component-sidebar"
+>
+  <div
+    className="side-container"
+  >
+    <ul
+      className="page-links sidebar-links-animate sidebar-links"
+    >
+      <li>
+        <a
+          href="/about/"
+          onClick={[Function]}
+        >
+          about
+        </a>
+      </li>
+      <li>
+        <a
+          href="/projects/"
+          onClick={[Function]}
+        >
+          projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="/gallery/"
+          onClick={[Function]}
+        >
+          gallery
+        </a>
+      </li>
+      <li>
+        <a
+          href="/music/"
+          onClick={[Function]}
+        >
+          music
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact/"
+          onClick={[Function]}
+        >
+          contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
+`;

@@ -6,7 +6,6 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "./styles.css";
 
 // import required modules

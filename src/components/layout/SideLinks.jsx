@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "gatsby";
 import data from '../../constants/links';
-import './Sidebar.css'
+import PropTypes from "prop-types";
+import './Sidebar.css';
 
 const SideLinks = ({ styleClass = '', toggle }) => {
   return (
@@ -19,5 +20,11 @@ const SideLinks = ({ styleClass = '', toggle }) => {
     </ul>
   )
 }
+
+SideLinks.propTypes = {
+  styleClass: PropTypes.string,
+  toggle: PropTypes.func.isRequired
+}
+
 
 export default SideLinks

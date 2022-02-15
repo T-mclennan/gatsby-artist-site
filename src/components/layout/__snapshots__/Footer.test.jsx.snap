@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Has properly rendered 1`] = `
+<footer
+  className="footer"
+>
+  <div>
+    <h5>
+      copyright©
+      2022
+      <span>
+        Graff and Stuff
+      </span>
+       all rights reserved
+    </h5>
+  </div>
+</footer>
+`;

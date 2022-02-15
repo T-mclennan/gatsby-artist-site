@@ -24,7 +24,15 @@ const Project = ({id, title, images, date, category, slug, description }) => {
 }
 
 
-Project.propTypes = {}
+Project.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
+  date: PropTypes.object,
+  category: PropTypes.string,
+  slug: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+}
 
 export default Project
 

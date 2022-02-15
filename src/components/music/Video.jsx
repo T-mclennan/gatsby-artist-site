@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types";
 import * as styles from './Video.module.css';
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
@@ -11,8 +12,14 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      {...props}
     />
   </div>
 )
+
+Video.propTypes = {
+  videoSrcURL: PropTypes.string.isRequired,
+  videoTitle: PropTypes.func.isRequired,
+}
 
 export default Video;
