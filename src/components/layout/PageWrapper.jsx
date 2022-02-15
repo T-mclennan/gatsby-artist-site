@@ -18,7 +18,7 @@ const PageWrapper = ({pageName, children}) => {
 
 PageWrapper.propTypes = {
   pageName: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.any.isRequired,
 }
 
 export default PageWrapper;

@@ -38,7 +38,10 @@ export const query = graphql`
         localFile {
           publicURL
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
+            gatsbyImageData(
+              placeholder: BLURRED
+              transformOptions: {cropFocus: CENTER}
+            )
           }
         }
       }

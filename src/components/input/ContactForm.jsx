@@ -143,7 +143,7 @@ function ContactForm() {
             onChange={onReCAPTCHAChange}
           />
 	  
-          <button htmlType="submit" disabled={status.submitting} className={styles.contactButton}>
+          <button htmltype="submit" disabled={status.submitting} className={styles.contactButton}>
             {!status.submitting
               ? !status.submitted
                 ? 'Submit'

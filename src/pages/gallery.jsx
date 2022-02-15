@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import PageWrapper from "~layout/PageWrapper"
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import PageWrapper from "~layout/PageWrapper";
 import Title from "~components/Title";
-import Gallery from '@browniebroke/gatsby-image-gallery'
+import Gallery from '@browniebroke/gatsby-image-gallery';
 import * as styles from './gallery.module.css';
 
 const GalleryPage = ({data}) => {

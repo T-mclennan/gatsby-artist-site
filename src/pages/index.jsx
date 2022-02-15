@@ -55,7 +55,10 @@ export const query = graphql`
         images {
           localFile {
             childrenImageSharp {
-              gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+              gatsbyImageData(
+                placeholder: BLURRED, layout: CONSTRAINED
+                transformOptions: {cropFocus: CENTER}
+              )
             }
           }
         }

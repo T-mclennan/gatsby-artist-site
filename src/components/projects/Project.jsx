@@ -28,7 +28,7 @@ Project.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.object).isRequired,
-  date: PropTypes.object,
+  date: PropTypes.string,
   category: PropTypes.string,
   slug: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired

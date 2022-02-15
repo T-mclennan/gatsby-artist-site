@@ -20,7 +20,7 @@ FixedBackground.propTypes = {
   height: PropTypes.string,
   image: PropTypes.string.isRequired,
   gradient: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.any,
 }
 
 export default FixedBackground

@@ -1,0 +1,59 @@
+
+.about {
+
+}
+
+.aboutHeader {
+
+}
+
+.artistContent {
+  margin: 2rem auto;
+  height: 100%;
+  width: min(90%, 75rem);
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2em;
+  outline: 1px solid lightgray;
+  padding: 2rem;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.iconBox {
+  width: 15rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.socialIcon {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+}
+
+.socialIcon:hover {
+  color: var(--clr-primary-5);
+  transform: scale(1.1);
+}
+
+@media (min-width: 55em) {
+  .artistContent {
+    grid-auto-flow: column;
+  }
+}

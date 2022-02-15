@@ -50,7 +50,7 @@ module.exports = {
       options: {
         apiURL: process.env.GATSBY_SERVER_URL,
         queryLimit: 1000, 
-        collectionTypes: ['project', 'gallery'],
+        collectionTypes: ['project', 'gallery', 'artist'],
         singleTypes: ['homepage', 'about'],
       },
     },

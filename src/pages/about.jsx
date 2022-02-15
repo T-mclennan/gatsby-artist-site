@@ -1,47 +1,89 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Title from "~components/Title"
-import PageWrapper from "~layout/PageWrapper"
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Title from "~components/Title";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import PageWrapper from "~layout/PageWrapper";
+import * as styles from './about.module.css';
+
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaYoutube,
+} from "react-icons/fa"
+import {MdEmail} from "react-icons/md"
+import {  AiFillInstagram,} from "react-icons/ai"
+
+
 
 const About = ({data}) => {
 
   const { 
-    allStrapiAbout: { nodes: aboutData},
+    allStrapiArtist: { nodes: artistData},
   } = data;
 
-  console.log('About Data')
-  console.log(aboutData)
   return (
-    <PageWrapper pageName="About">
-      <Title title="About Graff and Stuff"/>
+    <PageWrapper pageName="About" className={styles.about}>
+      <header className={styles.aboutHeader}>
+        <Title title={'About Us'}/>
+      </header>
+      {artistData.map(artist => {
+        const {id, description, name, email, facebook, twitter, instagram, youtube, location, picture} = artist;
+        const image = getImage(picture.localFile)
+        return (
+          <article className={styles.artistContent} key={id}>
+            <header className={styles.contentBox}>
+              <div className={styles.titleBox}>
+                <div>
+                  <h2>{name}</h2>
+                  <h5>{location}</h5>
+                </div>
+                <div className={styles.iconBox}>
+                    {email    && <MdEmail className={styles.socialIcon}></MdEmail>}
+                    {facebook && <FaFacebookSquare className={styles.socialIcon}></FaFacebookSquare>}
+                    {twitter  && <FaTwitterSquare className={styles.socialIcon}></FaTwitterSquare>}
+                    {youtube  && <FaYoutube className={styles.socialIcon}></FaYoutube>}
+                    {instagram && <AiFillInstagram className={styles.socialIcon}></AiFillInstagram>}
+                </div>
+              </div>
+              <p>{description}</p>
+            </header>
+            <GatsbyImage image={image} />
+          </article>
+        )
+      })
+    }
+
     </PageWrapper>
   )
 }
 
 export const query = graphql`
   {
-    allStrapiAbout {
+    allStrapiArtist {
       nodes {
-        Artist {
-          Picture {
-            localFile {
-              childImageSharp {
-                gatsbyImageData
-              }
+        description
+        email
+        facebook
+        id
+        instagram
+        youtube
+        twitter
+        name
+        location
+        picture {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                transformOptions: {cropFocus: NORTH, fit: CONTAIN}
+                placeholder: TRACED_SVG
+                tracedSVGOptions: {color: "#871400", threshold: 45}
+                layout: CONSTRAINED
+                height: 400
+                width: 400
+              )
             }
           }
-          Description
-          Email
-          Facebook
-          Instagram
-          Location
-          Name
-          id
-          Twitter
         }
-        Description
-        Title
-        id
       }
     }
   }
