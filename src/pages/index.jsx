@@ -6,7 +6,6 @@ import bg1 from '../assets/images/optimized/alp-ancel.webp';
 import bg2 from '../assets/images/optimized/char-beck.webp';
 import { 
   Hero, 
-  Tagline, 
   Testimonial, 
   CallToAction, 
   Services, 
@@ -29,11 +28,11 @@ const IndexPage = ({data}) => {
       <main>
         <Hero />
         <CallToAction />
-        <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
-        <Projects projects={projects} title="Latest Projects" showLink/>
-        <Services />
         <Slider />
-        <Tagline />
+        <Projects projects={projects} title="Latest Projects" showLink/>
+        <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
+        <Services />
+        <Testimonial />
         <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/>
       </main>
     </>

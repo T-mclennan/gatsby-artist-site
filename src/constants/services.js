@@ -4,7 +4,7 @@ import { IoBrushOutline, IoColorPaletteOutline } from "react-icons/io5"
 
 
 const serviceIcon = {
-  fontSize: '3rem',
+  fontSize: '2.5rem',
   marginBottom: '1.5rem',
 }
 const services = [
@@ -12,19 +12,19 @@ const services = [
     id: 1,
     icon: <IoBrushOutline style={serviceIcon} />,
     title: "mural painting",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
     id: 2,
     icon: <IoColorPaletteOutline style={serviceIcon} />,
-    title: "other mediums",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "digital art",
+    text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
   },
   {
     id: 3,
     icon: <FaBrush style={serviceIcon} />,
     title: "consulting services",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   },
 ]
 

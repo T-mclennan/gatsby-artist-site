@@ -36,12 +36,8 @@ const Slider = () => {
 
   const data = useStaticQuery(query)
   const {allStrapiGallery:{nodes: pictures}} = data;
-  // const {position, company, date, desc} = jobs[0];
-  // console.log(pictures)
-
   return (
-    <>
-      {/* <GatsbyImage src={pictures[0].localFile.childImageSharp} alt={'1'}/> */}
+    <section className="slider-section">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -72,7 +68,7 @@ const Slider = () => {
         }
 
       </Swiper>
-    </>
+    </section>
   );
 }
 

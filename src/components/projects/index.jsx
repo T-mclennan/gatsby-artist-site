@@ -16,7 +16,7 @@ function Projects({projects, title, showLink}) {
           return <Project key={project.id} {...project}/>
         })}
       </div>
-      {showLink && <Link to="/projects" className="btn center-btn">all projects</Link>}
+      {showLink && <Link to="/projects" className="btn center-btn">See all</Link>}
     </section>
   )
 }

@@ -1,3 +1,8 @@
+.slider-section {
+  padding: 5rem 0;
+  background: var(----clr-primary-10)
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -7,7 +12,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: white;
+  background-color: var(--clr-primary-10);
 
   /* Center slide text vertically */
   display: -webkit-box;

@@ -15,7 +15,7 @@ const ProjectTemplate = ({pageContext: {title}, data}) => {
   return ( 
 
     <PageWrapper title={title}>
-      <article style={{maxWidth: '60rem'}}>
+      <article style={{maxWidth: '60rem', padding: '1rem'}}>
         <GatsbyImage image={coverImage} alt={title}/>
         <div>
           <h4>{title}</h4>

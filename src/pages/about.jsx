@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Title from "~components/Title";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PageWrapper from "~layout/PageWrapper";
@@ -26,9 +26,10 @@ const About = ({data}) => {
       <header className={styles.aboutHeader}>
         <Title title={'About Us'}/>
       </header>
-      {artistData.map(artist => {
+      {artistData.map((artist, i) => {
         const {id, description, name, email, facebook, twitter, instagram, youtube, location, picture} = artist;
         const image = getImage(picture.localFile)
+        const delay = 100 + (i)*200;
         return (
           <article className={styles.artistContent} key={id}>
             <header className={styles.contentBox}>
@@ -37,7 +38,12 @@ const About = ({data}) => {
                   <h2>{name}</h2>
                   <h5>{location}</h5>
                 </div>
-                <div className={styles.iconBox}>
+                <div className={styles.iconBox}
+                  data-sal="zoom-in"
+                  data-sal-duration="700" 
+                  data-sal-delay={delay} 
+                  data-sal-easing="ease" 
+                >
                     {email    && <MdEmail className={styles.socialIcon}></MdEmail>}
                     {facebook && <FaFacebookSquare className={styles.socialIcon}></FaFacebookSquare>}
                     {twitter  && <FaTwitterSquare className={styles.socialIcon}></FaTwitterSquare>}
