@@ -221,7 +221,7 @@ align-items: center;
 .btn-solid {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: var(--clr-primary-10);
   padding: 0.5em var(--padding-x);
   --padding-x: 1.2em;
   letter-spacing: var(--spacing);

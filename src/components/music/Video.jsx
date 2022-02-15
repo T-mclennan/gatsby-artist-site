@@ -19,7 +19,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
 
 Video.propTypes = {
   videoSrcURL: PropTypes.string.isRequired,
-  videoTitle: PropTypes.func.isRequired,
+  videoTitle: PropTypes.string.isRequired,
 }
 
 export default Video;

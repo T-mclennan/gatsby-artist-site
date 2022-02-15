@@ -53,7 +53,7 @@ const About = ({data}) => {
               </div>
               <p>{description}</p>
             </header>
-            <GatsbyImage image={image} />
+            <GatsbyImage image={image} alt={name}/>
           </article>
         )
       })
