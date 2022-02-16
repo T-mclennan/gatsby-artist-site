@@ -24,4 +24,6 @@ module.exports = {
   testURL: `http://localhost`,
   testRunner: "jest-jasmine2",
   setupFiles: [`<rootDir>/loadershim.js`],
+  testEnvironment: `jsdom`,
+  setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
 }

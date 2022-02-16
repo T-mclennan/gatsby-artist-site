@@ -3,13 +3,14 @@
 exports[`Sidebar Has properly rendered 1`] = `
 <aside
   className="sidebar show-sidebar"
-  data-test="component-sidebar"
+  data-testid="component-sidebar"
 >
   <div
     className="side-container"
   >
     <ul
       className="page-links sidebar-links-animate sidebar-links"
+      data-testid="side-links"
     >
       <li>
         <a

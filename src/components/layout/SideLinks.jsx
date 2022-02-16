@@ -6,7 +6,7 @@ import './Sidebar.css';
 
 const SideLinks = ({ styleClass = '', toggle }) => {
   return (
-    <ul className={`page-links ${styleClass}`}>
+    <ul className={`page-links ${styleClass}`} data-testid="side-links">
       {data.map(link => {
         return (
           <li key={link.id}>
