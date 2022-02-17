@@ -35,7 +35,7 @@ describe("Sidebar", () => {
     expect(parent).toContainElement(child);
   })
 
-  it('does not throw warning with expected props', () => {
+  it('Does not throw warning with expected props', () => {
     checkProps(Sidebar, defaultProps);
   })
 })

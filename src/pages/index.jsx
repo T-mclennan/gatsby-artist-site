@@ -30,10 +30,10 @@ const IndexPage = ({data}) => {
         <CallToAction />
         <Slider />
         <Projects projects={projects} title="Latest Projects" showLink/>
-        <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
-        <Services />
         <Testimonial />
-        <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/>
+        <Services />
+        <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
+        {/* <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/> */}
       </main>
     </>
   )

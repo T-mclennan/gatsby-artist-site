@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^7.0.3",
+    "@react-icons/all-files": "^4.1.0",
     "antd": "^4.16.13",
     "gatsby": "^3.2.1",
     "gatsby-plugin-image": "^1.2.1",
