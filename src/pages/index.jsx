@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Projects from "~projects";
 import Seo from "~components/Seo";
 import bg1 from '../assets/images/optimized/alp-ancel.webp';
-import bg2 from '../assets/images/optimized/char-beck.webp';
+
 import { 
   Hero, 
   Testimonial, 
@@ -33,7 +33,6 @@ const IndexPage = ({data}) => {
         <Testimonial />
         <Services />
         <FixedBackground image={bg1} gradient={imageGradient} height='40vh'/>
-        {/* <FixedBackground image={bg2} gradient={imageGradient} height='40vh'/> */}
       </main>
     </>
   )

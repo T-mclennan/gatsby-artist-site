@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 470px) {
   .testimonials::before {
-    height: 4.7rem;
+    height: 5.75rem;
     background: url('../../assets/images/wave-medium-reversed.png');
     background-size: cover;
   }
@@ -84,6 +84,6 @@
   }
 
   .testimonial {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 }

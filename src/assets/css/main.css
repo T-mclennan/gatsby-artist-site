@@ -53,7 +53,7 @@ Variables
   /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1140,28,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
   --fs--2: clamp(0.78rem, 0.71rem + 0.35vw, 0.96rem);
   --fs--1: clamp(0.94rem, 0.84rem + 0.51vw, 1.20rem);
-  --fs-0: clamp(1.13rem, 0.98rem + 0.73vw, 1.50rem);
+  --fs-0: clamp(1.05rem, 0.98rem + 0.73vw, 1.50rem);
   --fs-1: clamp(1.35rem, 1.15rem + 1.02vw, 1.88rem);
   --fs-2: clamp(1.62rem, 1.34rem + 1.41vw, 2.34rem);
   --fs-3: clamp(1.94rem, 1.56rem + 1.92vw, 2.93rem);
@@ -158,21 +158,6 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  /* h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  } */
   h1,
   h2,
   h3,

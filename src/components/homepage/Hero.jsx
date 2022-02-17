@@ -13,7 +13,7 @@ const Hero = () => {
       <HeroNav />
         <div className={styles.heroText}       
           data-sal="slide-up"
-          data-sal-duration="1000" 
+          data-sal-duration="700" 
           data-sal-delay="300" 
           data-sal-easing="ease" 
         >

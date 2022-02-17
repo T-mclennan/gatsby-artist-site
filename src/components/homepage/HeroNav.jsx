@@ -10,8 +10,8 @@ const HeroNav = () => {
   return ( 
     <nav className={styles.heroNav}
       data-sal="fade"
-      data-sal-duration="1000" 
-      data-sal-delay="750" 
+      data-sal-duration="700" 
+      data-sal-delay="500" 
       // data-sal-easing="easeInOutBack" 
     >
       <div className={styles.navCenter}>

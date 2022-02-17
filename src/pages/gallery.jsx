@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PageWrapper from "~layout/PageWrapper";
 import Title from "~components/Title";
 import Gallery from '@browniebroke/gatsby-image-gallery';
@@ -13,7 +13,7 @@ const GalleryPage = ({data}) => {
   })
 
   const CustomWrapper = ({ children, onClick }) => (
-    <div className={styles.imageWrapper} onClick={onClick}>
+    <div className={styles.imageWrapper} onClick={onClick} role="img">
       {children}
     </div>
   )
@@ -24,7 +24,7 @@ const GalleryPage = ({data}) => {
         <Title title="Gallery"/>
         <Gallery 
           images={images}
-          // customWrapper={CustomWrapper}
+          customWrapper={CustomWrapper}
         />
       </section>
     </PageWrapper>

@@ -36,9 +36,7 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
           >
             <img src={logo} alt="graff and stuff" />
           </Link>
-
-        <HamburgerButton open={isOpen} toggle={toggleSidebar} aria-label="menu"/>
-
+          <HamburgerButton open={isOpen} toggle={toggleSidebar} aria-label="menu"/>
         </div>
         <div className={styles.navLinks}>
           {pageLinks.map((link, i) => {
