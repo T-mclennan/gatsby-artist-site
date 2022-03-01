@@ -3,12 +3,13 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center center;
   width: 100%;
   text-align: center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;

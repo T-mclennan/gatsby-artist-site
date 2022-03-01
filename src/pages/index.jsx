@@ -18,7 +18,14 @@ const IndexPage = ({data}) => {
 
   const { 
     allStrapiProject: { nodes: projects},
+    allStrapiHomepage: { nodes: homePageData}
   } = data;
+
+  const {bgImage1, bgImage2, headerImage} = homePageData[0];
+
+  // console.log(bgImage1);
+  // const bg1 = bgImage1.localFile.childImageSharp.original;
+  // console.log(bg1)
 
   const imageGradient = 'linear-gradient(rgba(230, 100, 101, 0.4), rgba(145, 152, 229, 0.4))';
   
@@ -59,6 +66,25 @@ export const query = graphql`
               )
             }
           }
+        }
+      }
+    }
+    allStrapiHomepage {
+      nodes {
+        bgImage1 {
+          localFile {
+            childImageSharp {
+              original {
+                src
+              }
+            }
+          }
+        }
+        bgImage2 {
+          url
+        }
+        headerImage {
+          url
         }
       }
     }
