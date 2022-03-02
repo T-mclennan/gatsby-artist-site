@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby";
-import socialLinks from "../../constants/social_links";
 import background from '../../assets/images/optimized/octopus.webp';
 import FixedBackground from '../../components/homepage/FixedBackground';
 import HeroNav from './HeroNav';

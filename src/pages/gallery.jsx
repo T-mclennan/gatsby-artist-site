@@ -12,11 +12,11 @@ const GalleryPage = ({data}) => {
     return node.image.localFile.childImageSharp;
   })
 
-  const CustomWrapper = ({ children, onClick }) => (
-    <div className={styles.imageWrapper} onClick={onClick} role="img">
-      {children}
-    </div>
-  )
+  // const CustomWrapper = ({ children, onClick }) => (
+  //   <div className={styles.imageWrapper} onClick={onClick} role="img">
+  //     {children}
+  //   </div>
+  // )
 
   return (
     <PageWrapper pageName="Gallery">
@@ -24,7 +24,7 @@ const GalleryPage = ({data}) => {
         <Title title="Gallery"/>
         <Gallery 
           images={images}
-          customWrapper={CustomWrapper}
+          // customWrapper={CustomWrapper}
         />
       </section>
     </PageWrapper>

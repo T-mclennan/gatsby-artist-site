@@ -6,14 +6,11 @@
 }
 
 .artistContent {
-  margin: 2rem auto;
   height: 100%;
   width: min(90%, 75rem);
   display: grid;
   grid-auto-flow: row;
-  gap: 2em;
-  outline: 1px solid lightgray;
-  padding: 2rem;
+  margin: 0 0 3rem 0;
 }
 
 .contentBox {
@@ -25,23 +22,31 @@
 
 .titleBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 1em;
+  margin: 1rem 0
 }
+
+.titleBox p {
+  margin: 0.5em 0;
+  font-style: italic;
+}
+
+.titleBox h2 {margin: 0;}
 
 .iconBox {
   width: 15rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .socialIcon {
-  font-size: 2.5rem;
-  margin-left: 1.5rem;
+  font-size: 1.75rem;
+  margin-right: 1rem;
   color: var(--clr-grey-1);
+  opacity: 0.8;
   transition: var(--transition);
 }
 
@@ -53,5 +58,28 @@
 @media (min-width: 55em) {
   .artistContent {
     grid-auto-flow: column;
+    justify-content: flex-end;
+    margin: 2rem auto;
+    gap: 2em;
+    outline: 1px solid lightgray;
+    padding: 2rem;
+  }
+
+  .titleBox {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .socialIcon {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .iconBox {
+    width: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }

@@ -24,7 +24,7 @@ const About = ({data}) => {
   return (
     <PageWrapper pageName="About" className={styles.about}>
       <header className={styles.aboutHeader}>
-        <Title title={'About Us'}/>
+        <Title title={'About Us'} mb="2"/>
       </header>
       {artistData.map((artist, i) => {
         const {id, description, name, email, facebook, twitter, instagram, youtube, location, picture} = artist;
@@ -32,17 +32,18 @@ const About = ({data}) => {
         const delay = 100 + (i)*200;
         return (
           <article className={styles.artistContent} key={id}>
+            <GatsbyImage image={image} alt={name}/>
             <header className={styles.contentBox}>
               <div className={styles.titleBox}>
                 <div>
                   <h2>{name}</h2>
-                  <h5>{location}</h5>
+                  <p>{location}</p>
                 </div>
                 <div className={styles.iconBox}
-                  data-sal="zoom-in"
-                  data-sal-duration="700" 
-                  data-sal-delay={delay} 
-                  data-sal-easing="ease" 
+                  // data-sal="fade-in"
+                  // data-sal-duration="700" 
+                  // data-sal-delay={delay} 
+                  // data-sal-easing="ease" 
                 >
                     {email    && <MdEmail className={styles.socialIcon}></MdEmail>}
                     {facebook && <FaFacebookSquare className={styles.socialIcon}></FaFacebookSquare>}
@@ -53,7 +54,6 @@ const About = ({data}) => {
               </div>
               <p>{description}</p>
             </header>
-            <GatsbyImage image={image} alt={name}/>
           </article>
         )
       })
